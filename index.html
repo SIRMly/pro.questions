@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/template.css"/>
 </head>
 <body>
-<div class="page" id="page1">
+<div class="page page-current" id="page1">
     <!-- 标题栏 -->
     <header class="bar bar-nav">
         <h1 class="title">工作人员信息录入</h1>
@@ -99,7 +99,7 @@
                                         <div class="item-inner">
                                             <div class="item-input row">
                                                 <label class="label-checkbox item-content pull-left">
-                                                    <input type="radio" name="sex" id="male" value="male" checked>
+                                                    <input type="radio" name="sex" id="male" value="male">
                                                     <div class="item-media">
                                                         <i class="icon icon-form-checkbox"></i>
                                                     </div>
@@ -145,7 +145,7 @@
                                         <div class="item-inner">
                                             <div class="item-input row">
                                                 <label class="label-checkbox item-content pull-left">
-                                                    <input type="radio" name="marry" id="notMarried" value="male" checked>
+                                                    <input type="radio" name="marry" id="notMarried" value="male">
                                                     <div class="item-media">
                                                         <i class="icon icon-form-checkbox"></i>
                                                     </div>
@@ -218,7 +218,7 @@
         </div>
     </div>
 </div>
-<div class="page page-current" id="page3">
+<div class="page" id="page3">
     <header class="bar bar-nav">
         <h1 class="title">问卷调查</h1>
     </header>
@@ -237,7 +237,7 @@
                                         <div class="item-inner">
                                             <div class="item-input row">
                                                 <label class="label-checkbox item-content pull-left">
-                                                    <input type="checkbox" name="que1"  value="0" checked>
+                                                    <input type="checkbox" name="que1"  value="0">
                                                     <div class="item-media">
                                                         <i class="icon icon-form-checkbox"></i>
                                                     </div>
@@ -343,7 +343,7 @@
                                                     </div>
                                                 </label>
                                                 <label class="label-checkbox item-content pull-left">
-                                                    <input type="radio" name="changeSkin" value="0" checked>
+                                                    <input type="radio" name="changeSkin" value="0">
                                                     <div class="item-media">
                                                         <i class="icon icon-form-checkbox"></i>
                                                     </div>
@@ -386,32 +386,6 @@
 <!-- at the end of body -->
 <script type='text/javascript' src='js/jquery.min.js' charset='utf-8'></script>
 <script type='text/javascript' src='js/light7.min.js' charset='utf-8'></script>
-<script>
-    $(function (){
-        var clickEvent = "ontouchstart" in document ? "touchend" : "click";
-        $("#enter").on("click", function (){
-            nextPage(0,1);
-        });
-        /*下一页*/
-        function nextPage(presentPage,nextPage){
-            $(".page").eq(presentPage).stop().fadeOut(300, function (){
-                $(".page").eq(nextPage).stop().fadeIn(500);
-            });
-        }
-        /*出生日期的日历*/
-        $("#birthDate").calendar();
-        /*职业选择*/
-        $("#career").picker({
-            toolbarTemplate: '<header class="bar bar-nav"><button class="button button-link pull-right close-picker">确定</button></header>',
-            cols: [
-                {
-                    textAlign: 'center',
-                    values: ['服务业','金融业','零售业','互联网','传播媒体','教育','医疗','军人','学生','其他']
-                }
-            ]
-        });
-
-    });
-</script>
+<script type='text/javascript' src='js/questions.js' charset='utf-8'></script>
 </body>
 </html>
