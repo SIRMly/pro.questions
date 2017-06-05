@@ -1,0 +1,95 @@
+@charset "utf-8";
+body{background-color: #f4f3ef;}
+.page,.bar{background-color: transparent;}
+
+.list-block .item-content{padding-left: 1rem;}
+.list-block .item-inner{padding-right: 1rem;}
+
+.title{text-align: left; padding-left: 1rem; color: #777; font-weight: 600;}
+.content-block{margin: 1rem 0;}
+.full-height-card{min-height: calc(100vh - 100px); margin: 0; border-radius: 6px;}
+.btn-wrapper{text-align: center;}
+.mt30{margin-top: 30%;}
+.mt3{margin-top: 3%;}
+.my-btns{border-width: 2px;opacity: 1;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: 0.7rem;
+    font-weight: 500;
+    height: 1.5rem;
+    line-height: 1.4rem;
+    width: 40%;
+    margin: auto;
+}
+.my-btns.blue-btn{
+    border-color: #68B3C8; color: #FFFFFF; background-color: #68B3C8;
+}
+.blue-btn:hover,.blue-btn:active{background-color: #3091B2; border-color: #3091B2;}
+/*page1*/
+#page1 .card-content{position: absolute; width: 100%;  top: 50%;
+    -webkit-transform: translateY(-70%);
+    -moz-transform: translateY(-70%);
+    -ms-transform: translateY(-70%);
+    -o-transform: translateY(-70%);
+    transform: translateY(-70%);}
+.item-title-content{ box-sizing: border-box; padding-left: 1rem; font-weight: 400; font-size: 0.7rem;}
+.list-block .item-title{margin: 0; font-size: 0.7rem;}
+.list-block .item-inner{border-bottom: none;}
+#page1 .list-block ul{}
+.page .list-block .form-input{border: 1px solid #CCC5B9;    background-color: #fffcf5;
+    border-radius: 4px;
+    color: #66615b;
+    font-size: 14px;
+    transition: background-color 0.3s ease 0s;
+    padding: 7px 18px;
+    height: 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    display: block;
+    width: 100%;}
+/*page2*/
+label.label-checkbox input[type=checkbox]:checked+.item-media i.icon-form-checkbox, label.label-checkbox input[type=radio]:checked+.item-media i.icon-form-checkbox{background-color: #FD6620;}
+.picker-modal{background-color: #d9dfe4;}
+.picker-modal .bar{background-color: #f1f1f1;border-top: 1px solid #c2c5ca;
+    border-bottom: 1px solid #c2c5ca;}
+
+/*page3*/
+.list-block .checkboxLi .item-media{padding-bottom: 0;}
+.list-block .checkboxLi .item-inner{padding-bottom: 0;}
+.checkboxLi .item-inner{padding-right: 0; }
+.checkboxLi .item-media+.item-inner{margin-left: 0.3rem;}
+
+hr{margin: 3rem 0; color: #e7e7e7; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

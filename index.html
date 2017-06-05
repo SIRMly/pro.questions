@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/light7.min.css">
+    <link rel="stylesheet" href="css/template.css"/>
+</head>
+<body>
+<div class="page" id="page1">
+    <!-- 标题栏 -->
+    <header class="bar bar-nav">
+        <h1 class="title">工作人员信息录入</h1>
+    </header>
+    <!-- 这里是页面内容区 -->
+    <div class="content">
+        <div class="content-block">
+            <div class="card full-height-card">
+                <div class="card-content">
+                    <div class="card-content-inner">
+                        <div class="list-block">
+                            <ul>
+                                <!-- Text inputs -->
+                                <li class="mt3">
+                                    <div class="item-title-content">工号</div>
+                                    <div class="item-content">
+
+                                        <div class="item-inner">
+                                            <div class="item-input">
+                                                <input type="text" class="form-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt3">
+                                    <div class="item-title-content">
+                                        密码
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-input">
+                                                <input type="password" class="form-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-wrapper mt30">
+                            <a href="#" class="button my-btns blue-btn" id="enter">进入</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page" id="page2">
+    <header class="bar bar-nav">
+        <h1 class="title">顾客信息记录单</h1>
+    </header>
+    <div class="content">
+        <div class="content-block">
+            <div class="card full-height-card">
+                <div class="card-content">
+                    <div class="card-content-inner">
+                        <div class="list-block">
+                            <ul>
+                                <li class="mt3">
+                                    <div class="item-title-content">客户编号</div>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-input">
+                                                <input type="text" class="form-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt3">
+                                    <div class="item-title-content">
+                                        姓名
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-input">
+                                                <input type="text" class="form-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt3 checkboxLi">
+                                    <div class="item-title-content">
+                                        性别
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-input row">
+                                                <label class="label-checkbox item-content pull-left">
+                                                    <input type="radio" name="sex" id="male" value="male" checked>
+                                                    <div class="item-media">
+                                                        <i class="icon icon-form-checkbox"></i>
+                                                    </div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">男</div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                                <label class="label-checkbox item-content pull-left">
+                                                    <input type="radio" name="sex" id="female" value="female">
+
+                                                    <div class="item-media">
+                                                        <i class="icon icon-form-checkbox"></i>
+                                                    </div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">女</div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt3">
+                                    <div class="item-title-content">
+                                        出生日期
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-input">
+                                                <input type="text" class="form-input" id="birthDate">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt3 checkboxLi">
+                                    <div class="item-title-content">
+                                        婚姻状况
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-input row">
+                                                <label class="label-checkbox item-content pull-left">
+                                                    <input type="radio" name="marry" id="notMarried" value="male" checked>
+                                                    <div class="item-media">
+                                                        <i class="icon icon-form-checkbox"></i>
+                                                    </div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">未婚</div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                                <label class="label-checkbox item-content pull-left">
+                                                    <input type="radio" name="marry" id="married" value="female">
+
+                                                    <div class="item-media">
+                                                        <i class="icon icon-form-checkbox"></i>
+                                                    </div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">已婚</div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt3">
+                                    <div class="item-title-content">
+                                        联系地址
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-input">
+                                                <input type="text" class="form-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt3">
+                                    <div class="item-title-content">
+                                        电子邮箱
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-input">
+                                                <input type="text" class="form-input">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt3">
+                                    <div class="item-title-content">
+                                        职业
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-input">
+                                                <input type="text" class="form-input" id="career">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-wrapper mt30">
+                            <a href="#" class="button my-btns blue-btn" id="submit1">下一步</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page page-current" id="page3">
+    <header class="bar bar-nav">
+        <h1 class="title">问卷调查</h1>
+    </header>
+    <div class="content">
+        <div class="content-block">
+            <div class="card full-height-card">
+                <div class="card-content">
+                    <div class="card-content-inner">
+                        <div class="list-block">
+                            <ul>
+                                <li class="mt3 checkboxLi">
+                                    <div class="item-title-content">
+                                        1.您是从哪里认识到咪咪脱毛中心？（可选多项）
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-input row">
+                                                <label class="label-checkbox item-content pull-left">
+                                                    <input type="checkbox" name="que1"  value="0" checked>
+                                                    <div class="item-media">
+                                                        <i class="icon icon-form-checkbox"></i>
+                                                    </div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">亲友</div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                                <label class="label-checkbox item-content pull-left">
+                                                    <input type="checkbox" name="que1"  value="1">
+                                                    <div class="item-media">
+                                                        <i class="icon icon-form-checkbox"></i>
+                                                    </div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">地铁或户外广告</div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                                <label class="label-checkbox item-content pull-left">
+                                                    <input type="checkbox" name="que1"  value="2">
+                                                    <div class="item-media">
+                                                        <i class="icon icon-form-checkbox"></i>
+                                                    </div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">网上讨论区</div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                                <label class="label-checkbox item-content pull-left">
+                                                    <input type="checkbox" name="que1"  value="3">
+                                                    <div class="item-media">
+                                                        <i class="icon icon-form-checkbox"></i>
+                                                    </div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">团购</div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                                <label class="label-checkbox item-content pull-left">
+                                                    <input type="checkbox" name="que1"  value="4">
+                                                    <div class="item-media">
+                                                        <i class="icon icon-form-checkbox"></i>
+                                                    </div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">网络搜索</div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                                <label class="label-checkbox item-content pull-left">
+                                                    <input type="checkbox" name="que1"  value="5">
+                                                    <div class="item-media">
+                                                        <i class="icon icon-form-checkbox"></i>
+                                                    </div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">自媒体</div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                                <label class="label-checkbox item-content pull-left">
+                                                    <input type="checkbox" name="que1"  value="6">
+                                                    <div class="item-media">
+                                                        <i class="icon icon-form-checkbox"></i>
+                                                    </div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">商户推荐</div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                                <label class="label-checkbox item-content pull-left">
+                                                    <input type="checkbox" name="que1"  value="7">
+                                                    <div class="item-media">
+                                                        <i class="icon icon-form-checkbox"></i>
+                                                    </div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">海报/宣传单页/小册子</div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="mt3 checkboxLi">
+                                    <div class="item-title-content">
+                                        2.除了光学脱毛外，您还希望:
+                                    </div>
+                                    <div class="item-content">
+                                        <div class="item-inner">
+                                            <div class="item-input row">
+                                                <label class="label-checkbox item-content pull-left">
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">改善肌肤问题:</div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                                <label class="label-checkbox item-content pull-left">
+                                                    <input type="radio" name="changeSkin" value="0" checked>
+                                                    <div class="item-media">
+                                                        <i class="icon icon-form-checkbox"></i>
+                                                    </div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">是</div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                                <label class="label-checkbox item-content pull-left">
+                                                    <input type="radio" name="changeSkin" value="1">
+
+                                                    <div class="item-media">
+                                                        <i class="icon icon-form-checkbox"></i>
+                                                    </div>
+                                                    <div class="item-inner">
+                                                        <div class="item-title-row">
+                                                            <div class="item-title">否</div>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr/>
+                        <div class="btn-wrapper mt30">
+                            <a href="#" class="button my-btns blue-btn" id="submit2">下一步</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- at the end of body -->
+<script type='text/javascript' src='js/jquery.min.js' charset='utf-8'></script>
+<script type='text/javascript' src='js/light7.min.js' charset='utf-8'></script>
+<script>
+    $(function (){
+        var clickEvent = "ontouchstart" in document ? "touchend" : "click";
+        $("#enter").on("click", function (){
+            nextPage(0,1);
+        });
+        /*下一页*/
+        function nextPage(presentPage,nextPage){
+            $(".page").eq(presentPage).stop().fadeOut(300, function (){
+                $(".page").eq(nextPage).stop().fadeIn(500);
+            });
+        }
+        /*出生日期的日历*/
+        $("#birthDate").calendar();
+        /*职业选择*/
+        $("#career").picker({
+            toolbarTemplate: '<header class="bar bar-nav"><button class="button button-link pull-right close-picker">确定</button></header>',
+            cols: [
+                {
+                    textAlign: 'center',
+                    values: ['服务业','金融业','零售业','互联网','传播媒体','教育','医疗','军人','学生','其他']
+                }
+            ]
+        });
+
+    });
+</script>
+</body>
+</html>
