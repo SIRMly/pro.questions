@@ -9,25 +9,24 @@
     $("#submit1").on("click", function (){
         nextPage(1,2);
     });
-    /*ÏÂÒ»Ò³*/
+    /*ä¸‹ä¸€é¡µ*/
     function nextPage(presentPage,nextPage){
         $(".page").eq(presentPage).stop().fadeOut(300, function (){
             $(".page").eq(nextPage).stop().fadeIn(500);
         });
     }
-    /*³öÉúÈÕÆÚµÄÈÕÀú*/
+    /*å‡ºç”Ÿæ—¥æœŸçš„æ—¥å†*/
     $("#birthDate").calendar();
-    /*Ö°ÒµÑ¡Ôñ*/
+    /*èŒä¸šé€‰æ‹©*/
     $("#career").picker({
-        toolbarTemplate: '<header class="bar bar-nav"><button class="button button-link pull-right close-picker">È·¶¨</button></header>',
+        toolbarTemplate: '<header class="bar bar-nav"><button class="button button-link pull-right close-picker">ç¡®å®š</button></header>',
         cols: [
             {
                 textAlign: 'center',
-                values: ['·şÎñÒµ','½ğÈÚÒµ','ÁãÊÛÒµ','»¥ÁªÍø','´«²¥Ã½Ìå','½ÌÓı','Ò½ÁÆ','¾üÈË','Ñ§Éú','ÆäËû']
+                values: ['æœåŠ¡ä¸š','é‡‘èä¸š','é›¶å”®ä¸š','äº’è”ç½‘','ä¼ æ’­åª’ä½“','æ•™è‚²','åŒ»ç–—','å†›äºº','å­¦ç”Ÿ','å…¶ä»–']
             }
         ]
     });
 
-
-
 })(jQuery);
+
