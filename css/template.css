@@ -9,8 +9,9 @@ body{background-color: #f4f3ef;}
 .content-block{margin: 1rem 0;}
 .full-height-card{min-height: calc(100vh - 100px); margin: 0; border-radius: 6px;}
 .btn-wrapper{text-align: center;}
-.mt30{margin-top: 30%;}
+.mt25{margin-top: 25%;}
 .mt3{margin-top: 3%;}
+.mt1{margin-top: 0.4rem; padding-left: 0.4rem;}
 .my-btns{border-width: 2px;opacity: 1;
     border-radius: 20px;
     box-sizing: border-box;
@@ -25,7 +26,9 @@ body{background-color: #f4f3ef;}
     border-color: #68B3C8; color: #FFFFFF; background-color: #68B3C8;
 }
 .blue-btn:hover,.blue-btn:active{background-color: #3091B2; border-color: #3091B2;}
-/*page1*/
+/*==label点击背景==*/
+html:not(.watch-active-state) label.label-checkbox:active, label.label-checkbox.active-state{background-color: transparent;}
+/*==page1==*/
 #page1 .card-content{position: absolute; width: 100%;  top: 50%;
     -webkit-transform: translateY(-70%);
     -moz-transform: translateY(-70%);
@@ -47,36 +50,52 @@ body{background-color: #f4f3ef;}
     box-shadow: none;
     display: block;
     width: 100%;}
-/*page2*/
+/*==page2==*/
 label.label-checkbox input[type=checkbox]:checked+.item-media i.icon-form-checkbox, label.label-checkbox input[type=radio]:checked+.item-media i.icon-form-checkbox{background-color: #FD6620;}
 .picker-modal{background-color: #d9dfe4;}
 .picker-modal .bar{background-color: #f1f1f1;border-top: 1px solid #c2c5ca;
     border-bottom: 1px solid #c2c5ca;}
-
-/*page3*/
-.list-block .checkboxLi .item-media{padding-bottom: 0;}
-.list-block .checkboxLi .item-inner{padding-bottom: 0;}
-.checkboxLi .item-inner{padding-right: 0; }
-.checkboxLi .item-media+.item-inner{margin-left: 0.3rem;}
-
 hr{margin: 3rem 0; color: #e7e7e7; }
+.member-word{font-size: 0.7rem; padding: 0 1rem;}
+.notice-color{color: #e4241f; font-size: 0.6rem;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*==page3==*/
+.list-block .checkboxLi .item-media{padding-bottom: 0;}
+.list-block .checkboxLi .item-inner:not(.notChange){padding-bottom: 0; min-height: 1.5rem; padding-right: 0; }
+.list-block .checkboxLi .item-content{min-height: 1.5rem;}
+.list-block .checkboxLi .item-input{margin-bottom: 0;}
+.checkboxLi .item-media+.item-inner{margin-left: 0.3rem;}
+.list-block .item-content.vertical-top{ padding-left: 0; padding-right: 0.6rem; webkit-box-align: flex-start;
+-ms-flex-align: start;
+     -webkit-align-items: flex-start;
+    /align-items: flex-start;  }
+.list-block .vertical-top .item-title{white-space: normal;}
+/*==位置==*/
+.question-pic{width: 25vw; display: block; margin: 0 auto; font-size: 0;}
+.addressLi .item-inner.disBlock{display: block;}
+.addressLi .item-content{padding:0 0.5rem;}
+.addressLi .item-content .item-input{display: block; width: calc(33.3% - 4px); float: left;  border: 1px solid #e7e7e7;
+    border-radius: 3px; margin: 0 2px; padding-bottom: 0.6rem;
+}
+.addressLi .item-inner label{padding-left: 0.5rem; font-size: 0.65rem;}
+.thanksNote{margin: 3rem 0;}
+.thanksNote p{margin: 0;}
+.fs-small{font-size: 0.6rem;}
+/*==同意书==*/
+.book{font-size: 0.8rem; text-align: justify;}
+.book-title{text-align: center; font-size: 1rem; font-weight: bold;}
+.book p:not(.book-title){text-indent: 1.6rem; margin: 0.5rem 0;}
+.book p .red{color: #e4241f; font-style: normal;}
+.book p span{display: block; text-indent: 1.6rem; margin: 0.2rem 0;}
+.list-block .agree .item-content,.list-block .agree.item-content{padding-left: 0.1rem;}
+.list-block .agree .item-content .item-inner{margin-left: 0.2rem;}
+/*==签字==*/
+#signature-wrapper canvas{display: block; margin: 0 auto;}
+#signImg img{width: 60vw; height: 35vw; display: block; margin: 0 auto; border: none;}
+.sig-buttons{text-align: center; }
+.sign-btn{display: inline-block; width: 6rem; height: 2rem; margin: 0.8rem;}
+#signEmpty,#signRewrite{background-color: #d7d7d7;}
+#sign-date{display: inline-block; width: 60vw;}
 
 
 
